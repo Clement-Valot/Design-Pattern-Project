@@ -1,0 +1,4 @@
+D:\OneDrive - De Vinci\ESILV\Année 4\Semestre 7\Design Pattern\Final project\Exercice 2\obj\Debug\netcoreapp3.1\Exercice 2.csprojAssemblyReference.cache
+D:\OneDrive - De Vinci\ESILV\Année 4\Semestre 7\Design Pattern\Final project\Exercice 2\obj\Debug\netcoreapp3.1\Exercice 2.AssemblyInfoInputs.cache
+D:\OneDrive - De Vinci\ESILV\Année 4\Semestre 7\Design Pattern\Final project\Exercice 2\obj\Debug\netcoreapp3.1\Exercice 2.AssemblyInfo.cs
+D:\OneDrive - De Vinci\ESILV\Année 4\Semestre 7\Design Pattern\Final project\Exercice 2\obj\Debug\netcoreapp3.1\Exercice 2.csproj.CoreCompileInputs.cache
