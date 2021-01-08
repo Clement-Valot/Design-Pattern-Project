@@ -15,10 +15,10 @@ namespace Exercice_1
             string_queue.normal_print();
             
             string_queue.dequeueing();
-            string_queue.foreach_print();
+            string_queue.normal_print();
 
             string_queue.enqueueing("node5");
-            string_queue.foreach_print();
+            string_queue.normal_print();
         }
 
         static void Test_Case2()
@@ -28,12 +28,14 @@ namespace Exercice_1
             int_queue.enqueueing(1);
             int_queue.enqueueing(2);
             int_queue.enqueueing(3);
-            int_queue.enqueueing(4);
-            int_queue.normal_print();
+            int_queue.foreach_print();
             
+            int_queue.dequeueing();
+            int_queue.dequeueing();
             int_queue.dequeueing();
             int_queue.foreach_print();
 
+            int_queue.enqueueing(4);
             int_queue.enqueueing(5);
             int_queue.foreach_print();
         }
