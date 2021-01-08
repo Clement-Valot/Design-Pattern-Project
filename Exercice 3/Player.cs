@@ -1,7 +1,6 @@
 using System;
 
-//Simple class Player with 6 attributes with getters and setters:
-//  - the id corresponding to the order of players creation (0 for first, 1 for second, etc )
+//Simple class Player with 5 attributes with getters and setters:
 //This attribute is useful to pass the hand to the next player each time one finishes his turn
 //  - the name chose at the beginning of the party
 //  - the inJail boolean indicating whether or not the player is in jail.
@@ -12,9 +11,8 @@ using System;
 //passed three consecutives turns in jail hence the need to count them.  
 public class Player
 {
-	public Player(int id, string name)
+	public Player(string name)
 	{
-        this.id = id;
 		this.name = name;
         this.inJail = false;
         this.position = 0;
@@ -23,7 +21,6 @@ public class Player
 	}
 	
 	public string name { get; set; }
-	public int id { get; set; }
     public bool inJail { get; set; }
     public int position { get; set; }
     public int tours { get; set; }

@@ -4,14 +4,26 @@ namespace Exercice_3
 {
     class Program
     {
-        public static void Main(string[] args)
+        //4 players and 3 turns to win
+        public static void TestCase1()
         {
-            int n_players = 4;
-            int scenario = 0;
             GameBoard gameBoard = new GameBoard(0); 
-            GameMaster gameMaster = new GameMaster(n_players, scenario, gameBoard);
+            GameMaster gameMaster = new GameMaster(4, 1, gameBoard);
             gameMaster.startGame();
-            
+        }
+
+        //6 players and 2 turns to win
+        public static void TestCase2()
+        {
+            GameBoard gameBoard = new GameBoard(0); 
+            GameMaster gameMaster = new GameMaster(6, 0, gameBoard);
+            gameMaster.startGame();
+        }
+
+        public static void Main(string[] args)
+        {            
+            //TestCase1();
+            TestCase2();
         }
     }
 }

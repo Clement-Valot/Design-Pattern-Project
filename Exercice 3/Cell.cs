@@ -61,6 +61,5 @@ public static class CellFactory
             default:
                 return new SimpleCell(name);
         }
-        
     }
 }

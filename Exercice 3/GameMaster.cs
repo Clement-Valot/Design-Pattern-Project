@@ -8,7 +8,7 @@ public class GameMaster
     //Otherwise, they have to press enter to toss the dice.
     //It is useful for us but if we add more functions to our monopoly, this boolean
     //should always be set to false since players need to interact with the game. 
-    bool auto = true;
+    bool auto = false;
 
     //GameMaster has 5 attributes:
     //  -The gameBoard it is affiliated to
@@ -46,7 +46,7 @@ public class GameMaster
         {
             Console.Write($"Type name of player {i}: ");
             string name = Console.ReadLine();
-            list_players[i]= new Player(i, name);
+            list_players[i]= new Player(name);
         }
         return list_players;
     }
@@ -96,7 +96,7 @@ public class GameMaster
         if(this.currentPlayer.inJail) Console.WriteLine("He is in Prison and needs a double to get out of it.");
         if(auto==false)
         {
-            Console.WriteLine("Press enter to pass the dice to next player.");
+            Console.WriteLine("Press enter to roll the dice.");
             Console.ReadKey();
         }
         else Thread.Sleep(500);
@@ -153,7 +153,7 @@ public class GameMaster
     }
 
     //Send a player to jail.
-    //Used when a player makes 3 doubles in a row and in the overriden playFunction method 
+    //Used when a player makes 3 doubles in a row and in the overriden playAction method 
     //of subclass GoToJailCell.
     //We need to set the player's attribute inJail to true and reset its turnsInJail attribute to 0 if he already
     //went to prison.

@@ -23,15 +23,16 @@ public class EndCondition
 	}
 	
     //End condition function.
+    //Don't forget to write the winning message adapted for each end condition.
 	public bool EndByTours(int tours)
     {
         bool end = false;
         foreach(Player player in this.gameMaster.players)
         {
-            if(player.tours>=3)
+            if(player.tours>=tours)
             {
                 end=true;
-                Console.WriteLine($"Player {player.name} won the game because he accomplished 3 tours!");
+                Console.WriteLine($"\nPlayer {player.name} won the game because he accomplished {tours} tours first!");
                 break;
             }
         }
